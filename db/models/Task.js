@@ -13,10 +13,11 @@ const Tasks = (sequelize, DataTypes) => {
         validate: { isDate: true },
       },
       name: { type: DataTypes.STRING, allowNull: false },
+      //description: { type: DataTypes.STRING },
       priority: {
         type: DataTypes.STRING,
         allowNull: false,
-        //defaultValue: false,
+        defaultValue: "HIGH",
         validate: {},
       },
       status: { type: DataTypes.BOOLEAN, defaultValue: false },

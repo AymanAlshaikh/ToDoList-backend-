@@ -7,8 +7,8 @@ const db = require("./db/models");
 const app = express();
 
 app.use(express.json());
-app.use("/task", routes);
 app.use(cors());
+app.use("/tasks", routes);
 
 app.use((req, res, next) => {
   next({ status: 404, message: "path not found" });
