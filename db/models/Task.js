@@ -8,7 +8,7 @@ const Tasks = (sequelize, DataTypes) => {
         unique: true,
       },
       date: {
-        type: DataTypes.STRING,
+        type: DataTypes.DATEONLY,
         allowNull: false,
         validate: { isDate: true },
       },
